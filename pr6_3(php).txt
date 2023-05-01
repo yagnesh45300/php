@@ -1,0 +1,35 @@
+a. To generate a random number between the given range:
+
+php
+Copy code
+$min = 1;
+$max = 100;
+$random_number = rand($min, $max);
+echo $random_number;
+In this example, we use the rand() function to generate a random integer between the given minimum and maximum values.
+
+b. To display the binary, octal and hexadecimal of a given decimal number:
+
+php
+Copy code
+$decimal = 42;
+$binary = decbin($decimal);
+$octal = decoct($decimal);
+$hexadecimal = dechex($decimal);
+echo "Binary: " . $binary . "<br>";
+echo "Octal: " . $octal . "<br>";
+echo "Hexadecimal: " . $hexadecimal . "<br>";
+In this example, we use the decbin(), decoct() and dechex() functions to convert the given decimal number to binary, octal and hexadecimal, respectively.
+
+c. To display the sin, cos and tan of the given angle:
+
+php
+Copy code
+$angle = 30;
+$sin = sin(deg2rad($angle));
+$cos = cos(deg2rad($angle));
+$tan = tan(deg2rad($angle));
+echo "Sin: " . $sin . "<br>";
+echo "Cos: " . $cos . "<br>";
+echo "Tan: " . $tan . "<br>";
+In this example, we use the sin(), cos() and tan() functions to compute the sine, cosine and tangent of the given angle, respectively. We use the deg2rad() function to convert the angle from degrees to radians, which is required by the trigonometric functions in PHP.

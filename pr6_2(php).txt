@@ -1,0 +1,45 @@
+a. To check if the given string is lowercase or not:
+
+php
+Copy code
+function is_lowercase($str) {
+  return $str === strtolower($str);
+}
+
+// Example usage:
+$str = "hello world";
+if (is_lowercase($str)) {
+  echo "The string is lowercase.";
+} else {
+  echo "The string is not lowercase.";
+}
+In this example, we define a function is_lowercase that takes a string argument and returns true if the string is lowercase and false otherwise. The function compares the original string with a lowercase version of the string using the strtolower() function.
+
+b. To reverse the given string:
+
+php
+Copy code
+$str = "hello world";
+$reversed_str = strrev($str);
+echo $reversed_str;
+In this example, we use the strrev() function to reverse the given string.
+
+c. To remove white spaces from the given string:
+
+php
+Copy code
+$str = " hello world ";
+$trimmed_str = trim($str);
+echo $trimmed_str;
+In this example, we use the trim() function to remove any whitespace characters from the beginning and end of the string.
+
+d. To replace the given word from the given string:
+
+php
+Copy code
+$str = "The quick brown fox jumps over the lazy dog";
+$old_word = "brown";
+$new_word = "red";
+$replaced_str = str_replace($old_word, $new_word, $str);
+echo $replaced_str;
+In this example, we use the str_replace() function to replace all occurrences of the old word with the new word in the given string. The function takes three arguments: the old word to replace, the new word to replace it with, and the original string.
